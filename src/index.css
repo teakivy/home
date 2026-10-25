@@ -1,0 +1,146 @@
+@font-face {
+	font-family: 'Eina01';
+	src: local('Eina01'),
+		url('./assets/fonts/Eina01-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eina01';
+	src: local('Eina01'),
+		url('./assets/fonts/Eina01-RegularItalic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eina01';
+	src: local('Eina01'),
+		url('./assets/fonts/Eina01-Light.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eina01';
+	src: local('Eina01'),
+		url('./assets/fonts/Eina01-LightItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eina01';
+	src: local('Eina01'),
+		url('./assets/fonts/Eina01-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eina01';
+	src: local('Eina01'),
+		url('./assets/fonts/Eina01-SemiboldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Eina01';
+	src: local('Eina01'), url('./assets/fonts/Eina01-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eina01';
+	src: local('Eina01'), url('./assets/fonts/Eina01-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+body {
+	margin: 0;
+	font-family: 'Eina01';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--lighter-dark-purple: #1f1b29;
+	--dark-purple: #1b1725;
+	--darker-purple: #15121e;
+	--true-purple: #b075eb;
+	--true-white: #fafafa;
+	--dark-white: #bab9bc;
+	--darker-white: #a4a2a8;
+	--highlight-bg: #5e469960;
+
+	background-color: var(--lighter-dark-purple);
+	color: var(--true-white);
+}
+
+::selection {
+	background: var(--highlight-bg);
+	color: var(--true-white);
+	opacity: 0.5;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.not-draggable {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	pointer-events: stroke;
+}
+
+.light-box-shadow {
+	-webkit-filter: drop-shadow(10px 10px 6px #00000043);
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+}
+
+.hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--true-purple);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.section-header {
+	color: var(--true-purple);
+}
+
+.link {
+	transition-duration: 0.2s;
+	text-decoration: none;
+	color: white;
+}
+
+.link:hover {
+	color: var(--true-purple);
+}
+
+.purple-text {
+	color: var(--true-purple);
+}

@@ -1,0 +1,16 @@
+.time-element {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: 'Eina01', sans-serif;
+  color: var(--true-white);
+  letter-spacing: -4px;
+}
+
+.am-pm {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Eina01', sans-serif;
+  color: var(--darker-white);
+  letter-spacing: 0px;
+  margin-left: 8px;
+}

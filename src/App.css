@@ -1,0 +1,22 @@
+.central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Center the content vertically and horizontally */
+  height: 100vh;
+}
+
+.central-search-bar {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.central-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

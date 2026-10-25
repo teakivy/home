@@ -1,0 +1,32 @@
+.search-icon {
+  margin: 0px 15px 0px 6px;
+  font-weight: 600;
+  font-family: Arial;
+  font-size: 23px;
+  color: var(--true-purple); 
+  /* remove the ability to select text */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.searchbox {
+    flex: 1;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 10px;
+    color: var(--true-white);
+    outline: none;
+}
+
+.search-bar {
+    background-color: var(--dark-purple);
+    border-radius: 15px;
+    padding: 11px;
+    border: 1px solid #ffffff17;
+    outline: none;
+    min-width: 300px;
+    max-width: 600px;
+    width: 80vw;
+}
